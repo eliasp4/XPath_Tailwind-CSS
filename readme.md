@@ -16,10 +16,16 @@ Esta herramienta de web scraping permite a los usuarios extraer información de 
 - XPath para la selección de elementos
 
 ## Instalación
-1. Clona este repositorio: git clone https://github.com tu-usuario/web-scraping-tool.git
+  1. Clona este repositorio: git clone https://github.com/eliasp4/XPath_Tailwind-CSS/
 2. Navega al directorio del proyecto: cd web-scraping-tool
-3. Instala las dependencias: npm install
-4. Compila los estilos de Tailwind CSS: npx tailwindcss -i ./src/input.css -o ./dist/output.css
+3. Instala Node.js si aún no lo tienes instalado (https://nodejs.org)
+4. Instala las dependencias: npm install
+5. Compila los estilos de Tailwind CSS: npx tailwindcss -i ./src/input.css -o ./dist/output.css
+6. Abre el archivo `src/index.html` en tu navegador web para usar la herramienta.
+
+## Desarrollo
+Para recompilar los estilos de Tailwind CSS automáticamente mientras desarrollas, ejecuta: npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+Esto vigilará los cambios en tus archivos y recompilará los estilos automáticamente.
 
 ## Uso
 1. Abre el archivo `index.html` en tu navegador web.
