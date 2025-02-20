@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping Tool</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-indigo-900 to-purple-800 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-md w-full bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden">
+        <div class="p-8">
+            <h1 class="text-3xl font-extrabold text-white mb-6 text-center">Web Scraping Tool</h1>
+            <form id="scrapingForm" class="space-y-6">
+                <div>
+                    <label for="url" class="block text-sm font-medium text-purple-200">URL</label>
+                    <input type="url" id="url" name="url" required class="mt-1 block w-full bg-purple-100 bg-opacity-20 border-0 border-b-2 border-purple-300 focus:ring-0 focus:border-white text-white placeholder-purple-300">
+                </div>
+                <div>
+                    <label for="xpath" class="block text-sm font-medium text-purple-200">XPath</label>
+                    <input type="text" id="xpath" name="xpath" required class="mt-1 block w-full bg-purple-100 bg-opacity-20 border-0 border-b-2 border-purple-300 focus:ring-0 focus:border-white text-white placeholder-purple-300">
+                </div>
+                <button type="submit" class="w-full py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                    Realizar Scraping
+                </button>
+            </form>
+            <div id="results" class="mt-8 text-white"></div>
+            <div id="images" class="mt-8 text-white"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    <!-- url : https://es.wikipedia.org/wiki/JavaScript
+    xpath : //img
+    xpath : //meta[@name='generator']/@content 
+    xpath : //meta/@name-->
+    <!-- url : https://www.jdsports.es/marca/adidas/
+    xpath : //span[@class='itemTitle'] -->
+    <!-- url : https://www.marca.com/coches-y-motos/coches.html?intcmp=MENUPROD&s_kw=coches
+    xpath : //img
+    xpath : //ul[@id='marca']//a -->
