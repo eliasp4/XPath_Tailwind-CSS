@@ -24,7 +24,8 @@ Esta herramienta de web scraping permite a los usuarios extraer información de 
 6. Abre el archivo `src/index.html` en tu navegador web para usar la herramienta.
 
 ## Desarrollo
-Para recompilar los estilos de Tailwind CSS automáticamente mientras desarrollas, ejecuta: npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+Para recompilar los estilos de Tailwind CSS automáticamente mientras desarrollas, ejecuta: npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch.
+
 Esto vigilará los cambios en tus archivos y recompilará los estilos automáticamente.
 
 ## Uso
